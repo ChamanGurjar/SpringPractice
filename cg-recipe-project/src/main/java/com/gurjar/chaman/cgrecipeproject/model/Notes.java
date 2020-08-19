@@ -1,11 +1,16 @@
 package com.gurjar.chaman.cgrecipeproject.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 
 /**
  * @author - Chaman Gurjar
  * @version - 1.0.0 - 18-Aug-2020
  */
+
+@Data
+@EqualsAndHashCode(exclude = {"recipe"})
 @Entity
 public class Notes {
 
@@ -19,27 +24,4 @@ public class Notes {
     @Lob
     private String recipeNotes;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Recipe getRecipe() {
-        return recipe;
-    }
-
-    public void setRecipe(Recipe recipe) {
-        this.recipe = recipe;
-    }
-
-    public String getRecipeNotes() {
-        return recipeNotes;
-    }
-
-    public void setRecipeNotes(String recipeNotes) {
-        this.recipeNotes = recipeNotes;
-    }
 }

@@ -1,5 +1,7 @@
 package com.gurjar.chaman.cgrecipeproject.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -8,7 +10,10 @@ import java.util.Set;
  * @version - 1.0.0 - 18-Aug-2020
  */
 
+@Data
+@EqualsAndHashCode(exclude = {"recipes"})
 @Entity
+@Table(name = "category")
 public class Category {
 
     @Id
@@ -20,27 +25,4 @@ public class Category {
     @ManyToMany(mappedBy = "categories")
     private Set<Recipe> recipes;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Set<Recipe> getRecipes() {
-        return recipes;
-    }
-
-    public void setRecipes(Set<Recipe> recipes) {
-        this.recipes = recipes;
-    }
 }
