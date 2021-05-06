@@ -46,6 +46,7 @@
                         <configuration>
                             <propertyFileWillOverride>true</propertyFileWillOverride>
                             <propertyFile>target/classes/liquibase.properties</propertyFile>
+                            <changeLogFile>target/classes/scripts/db.master.changelog.xml</changeLogFile>
                         </configuration>
                         <executions>
                             <execution>

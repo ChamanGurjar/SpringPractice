@@ -5,7 +5,7 @@ package com.gurjar.chaman.service.user;
 @version: 1.0. 06-May-2021;
 */
 
-public interface UserService {
+public interface StudentService {
 
     boolean isData();
 }
