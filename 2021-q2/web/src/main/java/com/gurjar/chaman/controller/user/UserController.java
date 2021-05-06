@@ -6,8 +6,6 @@ import org.springframework.stereotype.Controller;
 @version: 1.0. 06-May-2021;
 */
 
-
-
 @Controller
 public class UserController {
 
