@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2021-q2/2021-q2.iml" filepath="$PROJECT_DIR$/2021-q2/2021-q2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2021-q2/Repository/Repository.iml" filepath="$PROJECT_DIR$/2021-q2/Repository/Repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-Boot-OAuth/Spring-Boot-OAuth.iml" filepath="$PROJECT_DIR$/Spring-Boot-OAuth/Spring-Boot-OAuth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringPractice.iml" filepath="$PROJECT_DIR$/.idea/SpringPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cg-recipe-project/cg-recipe-project.iml" filepath="$PROJECT_DIR$/cg-recipe-project/cg-recipe-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dependency-injection/dependency-injection.iml" filepath="$PROJECT_DIR$/dependency-injection/dependency-injection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2021-q2/liquibase/liquibase.iml" filepath="$PROJECT_DIR$/2021-q2/liquibase/liquibase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2021-q2/service/service.iml" filepath="$PROJECT_DIR$/2021-q2/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2021-q2/web/web.iml" filepath="$PROJECT_DIR$/2021-q2/web/web.iml" />
+    </modules>
+  </component>
+</project>

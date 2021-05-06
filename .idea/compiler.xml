@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring-Boot-OAuth" />
+        <module name="Repository" />
+        <module name="dependency-injection" />
+        <module name="web" />
+        <module name="service" />
+        <module name="cg-recipe-project" />
+        <module name="liquibase" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="2021-q2" target="8" />
+      <module name="cg-recipe-project" target="1.5" />
+      <module name="dependency-injection" target="1.5" />
+      <module name="liquibase" target="8" />
+      <module name="Repository" target="8" />
+      <module name="service" target="8" />
+      <module name="Spring-Boot-OAuth" target="1.5" />
+      <module name="web" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
