@@ -15,7 +15,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @ComponentScan(basePackages  = {"com.gurjar.chaman"})
 @EntityScan(basePackages = {"com.gurjar.chaman.entity"})
 @EnableJpaRepositories(basePackages = {"com.gurjar.chaman.repository"})
-@PropertySource(value = "file:{user.home}/config/spring_practice_override.properties")
+@PropertySource(value = "file:${user.home}/config/spring_practice_override.properties")
 public class SpringPracticeConfig {
 
 }
