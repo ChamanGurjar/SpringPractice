@@ -50,7 +50,7 @@ public class StudentServiceImpl implements StudentService {
         Page<Student> allPageableStudents = studentRepository.findAll(pageable);
         logger.info("Total no of pages : {}", allPageableStudents.getTotalPages());
         List<Student> studentList = allPageableStudents.getContent();
-        System.out.println("Total students found : " + studentList.size());
+        logger.info("Total students fetched : {}", studentList.size());
         return studentList;
     }
 
