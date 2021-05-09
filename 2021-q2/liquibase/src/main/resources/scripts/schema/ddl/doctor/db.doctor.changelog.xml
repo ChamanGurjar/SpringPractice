@@ -25,6 +25,8 @@
                 <constraints nullable="false" />
             </column>
 
+            <column name="address" type="VARCHAR(255)"/>
+
             <column name="is_active" type="BOOLEAN" defaultValue="true">
                 <constraints nullable="false"/>
             </column>

@@ -18,6 +18,7 @@ public class Doctor extends BaseEntity {
     private String lastName;
     private String email;
     private Integer mobileNumber;
+    private String address;
 
     @Column(name = "is_active")
     private Boolean isActive;
@@ -70,6 +71,14 @@ public class Doctor extends BaseEntity {
         isActive = active;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Doctor{");
@@ -78,9 +87,9 @@ public class Doctor extends BaseEntity {
         sb.append(", lastName='").append(lastName).append('\'');
         sb.append(", email='").append(email).append('\'');
         sb.append(", mobileNumber=").append(mobileNumber);
+        sb.append(", address='").append(address).append('\'');
         sb.append(", isActive=").append(isActive);
         sb.append('}');
         return sb.toString();
     }
-
 }

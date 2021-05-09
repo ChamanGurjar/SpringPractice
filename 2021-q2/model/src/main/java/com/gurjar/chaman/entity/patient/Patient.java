@@ -1,14 +1,15 @@
 package com.gurjar.chaman.entity.patient;
 
+import com.gurjar.chaman.entity.BaseEntity;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
 /*
 @author: Chaman Gurjar    
 @version: 1.0. 09-May-2021;
 */
 
-import com.gurjar.chaman.entity.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
 
 @Entity
 public class Patient extends BaseEntity {
@@ -22,6 +23,8 @@ public class Patient extends BaseEntity {
 
     @Column(name = "is_active")
     private Boolean isActive;
+
+    private Long admissionDate;
 
 
     public String getSalutation() {
@@ -80,6 +83,14 @@ public class Patient extends BaseEntity {
         isActive = active;
     }
 
+    public Long getAdmissionDate() {
+        return admissionDate;
+    }
+
+    public void setAdmissionDate(Long admissionDate) {
+        this.admissionDate = admissionDate;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Patient{");
@@ -90,7 +101,9 @@ public class Patient extends BaseEntity {
         sb.append(", mobileNumber=").append(mobileNumber);
         sb.append(", caretakerContact=").append(caretakerContact);
         sb.append(", isActive=").append(isActive);
+        sb.append(", admissionDate=").append(admissionDate);
         sb.append('}');
         return sb.toString();
     }
+
 }
