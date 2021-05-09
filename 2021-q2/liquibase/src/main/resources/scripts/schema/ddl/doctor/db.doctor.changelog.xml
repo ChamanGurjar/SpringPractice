@@ -1,0 +1,46 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet author="Chaman Singh" id="create_table_doctor">
+
+        <createTable tableName="doctor">
+
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="dr_pkey"/>
+            </column>
+
+            <column name="salutation" type="VARCHAR(10)"/>
+
+            <column name="first_name" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="last_name" type="VARCHAR(255)"/>
+
+            <column name="email" type="VARCHAR(100)"/>
+
+            <column name="mobile_number" type="INT">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="is_active" type="BOOLEAN" defaultValue="true">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="created_on" type="BIGINT">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="modified_on" type="BIGINT" />
+
+        </createTable>
+
+    </changeSet>
+
+    <changeSet author="Chaman Gurjar" id="adding_unique_constraint_on_mobile_number">
+        <addUniqueConstraint columnNames="mobile_number" constraintName="unique_mobile_number" tableName="doctor"/>
+    </changeSet>
+
+</databaseChangeLog>

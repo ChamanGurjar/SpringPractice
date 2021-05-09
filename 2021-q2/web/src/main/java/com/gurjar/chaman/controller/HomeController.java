@@ -5,6 +5,7 @@ package com.gurjar.chaman.controller;
 @version: 1.0. 06-May-2021;
 */
 
+import com.gurjar.chaman.entity.patient.Patient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,5 +22,6 @@ public class HomeController {
     private String getVersion() {
         return "Current Version: " + currentVersion + ".   Current Date: " + new Date();
     }
+
 
 }

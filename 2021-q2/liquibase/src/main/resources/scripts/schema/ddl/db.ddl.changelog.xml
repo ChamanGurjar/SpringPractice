@@ -5,5 +5,8 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <include file="scripts/schema/ddl/student/db.student.changelog.xml"/>
+    <include file="scripts/schema/ddl/doctor/db.doctor.changelog.xml"/>
+    <include file="scripts/schema/ddl/hospital/db.hospital.changelog.xml"/>
+    <include file="scripts/schema/ddl/patient/db.patient.changelog.xml"/>
 
 </databaseChangeLog>
