@@ -5,9 +5,9 @@ package com.gurjar.chaman.dto.hospital;
 @version: 1.0. 09-May-2021;
 */
 
-import javax.persistence.Column;
+import com.gurjar.chaman.dto.BaseDto;
 
-public class HospitalDto {
+public class HospitalDto extends BaseDto {
 
     private String name;
     private String branch;

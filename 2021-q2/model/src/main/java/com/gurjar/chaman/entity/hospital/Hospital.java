@@ -13,12 +13,15 @@ import javax.persistence.Entity;
 @Entity
 public class Hospital extends BaseEntity {
 
+    @Column(nullable = false)
     private String name;
     private String branch;
     private String location;
+
+    @Column(nullable = false)
     private Integer mobileNumber;
 
-    @Column(name = "is_active")
+    @Column(name = "is_active", nullable = false)
     private Boolean isActive;
 
     public String getName() {

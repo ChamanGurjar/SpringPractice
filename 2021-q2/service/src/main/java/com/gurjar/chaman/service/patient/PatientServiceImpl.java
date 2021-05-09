@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class PatientServiceImpl {
+public class PatientServiceImpl implements PatientService {
 
     @Autowired
     private PatientRepository patientRepository;
